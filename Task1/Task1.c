@@ -4,8 +4,8 @@
 
 int main (int argc, char **argv) 
 {
-
-	int D,x1,x2;
+	int D;
+	double x1,x2;
 	int a=atoi(argv[1]);
 	int b=atoi(argv[2]);
 	int c=atoi(argv[3]);
@@ -18,14 +18,14 @@ int main (int argc, char **argv)
 		if(D==0)
 		{
 			x1 = ((b * (-1)) + sqrt(D)) / (2 * a);
-			printf("D=0 => The equation has only one root.\nRoot:\nx = %d",x1);
+			printf("D=0 => The equation has only one root.\nRoot:\nx = %f\n",x1);
 		}
 		else
 			if(D>0)
 			{
 				x1 = ((b * (-1)) + sqrt(D)) / (2 * a);
 				x2 = ((b * (-1)) - sqrt(D)) / (2 * a);
-				printf("D>0 => Regular equation.\nRoots:\nx1 = %d\nx2 = %d\n",x1,x2);
+				printf("D>0 => Regular equation.\nRoots:\nx1 = %0.2f\nx2 = %0.2f\n",x1,x2);
 			}
 	
 
